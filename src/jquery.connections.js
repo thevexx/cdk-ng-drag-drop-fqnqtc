@@ -1,3 +1,5 @@
+console.log('hahahaha')
+
 (function($) {
   $.fn.connections = function(options) {
     if (options === "update") {
@@ -159,6 +161,7 @@
     var h = ["right", "left"];
     if (l > r) {
       h = ["left", "right"];
+      console.log(h)
       var x = Math.max(r - border_w / 2, Math.min(from.right, to.right));
       r = l + border_w / 2;
       l = x;
