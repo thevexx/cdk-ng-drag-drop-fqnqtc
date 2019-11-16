@@ -19,8 +19,8 @@
 
   <section *ngFor="let list of listItems;let i = index">
      <h4>List One</h4>
-    <cdk-drop id="a{{i}}" class="list-sorted" (dropped)="addToList($event)" [data]="list">
-      <div *ngFor="let item of list" cdkDrag class="list-sorted__item">{{item.text}}</div>
+    <cdk-drop id="a{{i}}" [connectedTo]="['a0','a1']" class="list-sorted" (dropped)="addToList($event)" [data]="list">
+      <div *ngFor="let item of list" cdkDrag class="list-sorted__item" [attr.id]=item.id>{{item.text}}</div>
     </cdk-drop>
   </section>
 
