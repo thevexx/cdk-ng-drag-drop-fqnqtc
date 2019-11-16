@@ -29,7 +29,59 @@ export class AppComponent implements OnInit {
     {
       id: "3",
       text: "Three"
-    }
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
+    {
+      id: "3",
+      text: "Three"
+    },
   ];
   items3 = [
     {
@@ -55,11 +107,8 @@ export class AppComponent implements OnInit {
       $("#1").connections({
         to: "#4",
         borderClasses: {
-          top: "border-top",
-          right: "border-right",
-          bottom: "border-bottom",
-          left: "border-left"
-        }
+         borderClasses: {top: 'top ok', right: 'fail', bottom: 'fail', left: 'fail'
+         }},
       });
       connections = $("connection, inner");
     }, 1000);
